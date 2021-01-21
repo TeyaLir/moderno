@@ -94,7 +94,8 @@
 
   &-author { 
     display: flex;
-    align-items: center;   
+    align-items: center;  
+    max-width: 245px; 
     .avatar {
       display: inline-block;
       width: 30px;
@@ -111,8 +112,11 @@
     }
   }
 
-  &-star {
-
+  &-star { 
+    font-size: 12px;
+    span {
+      color: $bg;
+    }
   }
 }
 
@@ -132,4 +136,9 @@
       color: #fff;
     }
   }
+}
+
+.rate-star {
+  display: inline-block;
+  margin-right: 13px;
 }
